@@ -13,21 +13,12 @@ void main() {
     int firstNumber, secondNumber, thirdNumber, temp;
     printf("Enter three integers: ");
     scanf("%d %d %d", &firstNumber, &secondNumber, &thirdNumber);
-    if (firstNumber > secondNumber) {
-        temp = firstNumber;
-        firstNumber = secondNumber;
-        secondNumber = temp;
-    }
-    if (secondNumber > thirdNumber) {
-        temp = secondNumber;
-        secondNumber = thirdNumber;
-        thirdNumber = temp;
-    }
-    if (firstNumber > secondNumber) {
-        temp = firstNumber;
-        firstNumber = secondNumber;
-        secondNumber = temp;
-    }
+    if (firstNumber > secondNumber)
+        firstNumber = (firstNumber + secondNumber) - (secondNumber = firstNumber);
+    if (secondNumber > thirdNumber)
+        secondNumber = (secondNumber + thirdNumber) - (thirdNumber = secondNumber);
+    if (firstNumber > secondNumber)
+        firstNumber = (firstNumber + secondNumber) - (secondNumber = firstNumber);
     printf("Maximum number is %d.", thirdNumber);
 }
 
