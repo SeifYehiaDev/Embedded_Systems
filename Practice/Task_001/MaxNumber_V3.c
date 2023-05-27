@@ -10,7 +10,7 @@
                 /*Write a prgoram that takes three integers and print the maximum number*/
 //                                                 _Solution_
 void main() {
-    int firstNumber, secondNumber, thirdNumber, temp;
+    int firstNumber, secondNumber, thirdNumber;
     printf("Enter three integers: ");
     scanf("%d %d %d", &firstNumber, &secondNumber, &thirdNumber);
     if (firstNumber > secondNumber)
