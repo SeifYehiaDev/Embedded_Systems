@@ -11,27 +11,36 @@
 /*Write a program to take numbers from user and find the max and min from them (let users choose the No of numbers).*/
 //                                                 _Solution_
 void main() {
-    int number, totalNumber, index, maxNumber = INT_MIN, minNumber = INT_MAX;
+    int number, totalNumber, maxNumber = INT_MIN, minNumber = INT_MAX;
+    unsigned index;
     printf("Enter the total numbers: ");
     scanf("%d", &totalNumber);
-    for (index = 1; index <= totalNumber; index++) {
-        printf("Enter number %d: ", index);
-        scanf("%d", &number);
-        if (number > maxNumber)
-            maxNumber = number;
-        if (number < minNumber)
-            minNumber = number;
+    if (totalNumber < 0) {
+        printf("Error: the total number should be positive number.");
+        return;
     }
-    printf("The minimum number is %d\nThe maximum number is %d", minNumber, maxNumber);
+    for (index = 1; index <= totalNumber; index++) {
+        printf("Enter number %u: ", index);
+        scanf("%d", &number);
+        if (number > maxNumber) maxNumber = number;
+        if (number < minNumber) minNumber = number;
+    }
+    printf("The minimum number is %d.\nThe maximum number is %d.", minNumber, maxNumber);
 }
 
-//                                                 _Output_
+//                                                 _Output One_
 /*
 Enter the total numbers: 4
 Enter number 1: 77
 Enter number 2: 69
 Enter number 3: -5
 Enter number 4: 1
-The minimum number is -5
-The maximum number is 77
+The minimum number is -5.
+The maximum number is 77.
+ */
+
+//                                                 _Output Two_
+/*
+Enter the total numbers: -4
+Error: the total number should be positive number.
  */
