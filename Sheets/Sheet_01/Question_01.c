@@ -13,14 +13,13 @@ void main() {
     int firstNumber, secondNumber, sum = 0, index;
     printf("Enter two numbers: ");
     scanf("%d %d", &firstNumber, &secondNumber);
-    if (firstNumber > secondNumber)
-        firstNumber = (firstNumber + secondNumber) - (secondNumber = firstNumber);
+    if (firstNumber > secondNumber) firstNumber = (firstNumber + secondNumber) - (secondNumber = firstNumber);
     for (index = firstNumber + 1; index < secondNumber; sum += index, index++);
     printf("The sum of numbers between %d and %d is %d.", firstNumber, secondNumber, sum);
 }
 
 //                                                 _Output_
 /*
-Enter two numbers: 20 10
-The sum of numbers between 10 and 20 is 135.
+Enter two numbers: 6 -5
+The sum of numbers between -5 and 6 is 5.
  */
