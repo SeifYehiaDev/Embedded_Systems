@@ -25,8 +25,14 @@ void main() {
     printf("Number of holes are %d", sumOfHoles);
 }
 
-//                                                 _Output_
+//                                                 _Output One_
 /*
 Enter a positive integer: 3824
 Number of holes are 3
+ */
+
+//                                                 _Output Two_
+/*
+Enter a positive integer: -3824
+Error: the number should be a positive number.
  */
