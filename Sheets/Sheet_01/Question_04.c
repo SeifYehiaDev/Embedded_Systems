@@ -11,16 +11,41 @@
             /*Write a program that take two numbers and multiply them without using * operation.*/
 //                                                 _Solution_
 void main() {
-    int firstNumber, secondNumber, index, product = 0;
+    int firstNumber, secondNumber;
+    long long product = 0L;
+    unsigned index;
+    unsigned char isNegative;
     printf("Enter two integers to multiply: ");
     scanf("%d %d", &firstNumber, &secondNumber);
+    printf("%d * %d = ", firstNumber, secondNumber);
+    isNegative = (firstNumber < 0 && secondNumber > 0 || firstNumber > 0 && secondNumber < 0) ? 1 : 0;
+    firstNumber = abs(firstNumber);
+    secondNumber = abs(secondNumber);
     for (index = 1; index <= ((firstNumber < secondNumber) ? firstNumber : secondNumber); index++)
         product += (firstNumber > secondNumber) ? firstNumber : secondNumber;
-    printf("%d * %d = %d", firstNumber, secondNumber, product);
+    printf("%lld\n", (isNegative) ? -product : product);
 }
 
-//                                                 _Output_
+//                                                 _Output One_
 /*
-Enter two integers to multiply: 2 3
-2 * 3 = 6
+Enter two integers to multiply: 2147483647 2
+2147483647 * 2 = 4294967294
+ */
+
+//                                                 _Output Two_
+/*
+Enter two integers to multiply: 2147483647 -2
+2147483647 * -2 = -4294967294
+ */
+
+//                                                 _Output Three_
+/*
+Enter two integers to multiply: -2147483647 2
+-2147483647 * 2 = -4294967294
+ */
+
+//                                                 _Output Four_
+/*
+Enter two integers to multiply: -2147483647 -2
+-2147483647 * -2 = 4294967294
  */
