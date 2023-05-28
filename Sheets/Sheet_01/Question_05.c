@@ -11,20 +11,44 @@
 //                                                 _Solution_
 void main() {
     int firstNumber, secondNumber;
-    printf("Enter two integers to calculate reminder:  ");
+    printf("Enter two integers to calculate reminder: ");
     scanf("%d %d", &firstNumber, &secondNumber);
     (secondNumber == 0) ? printf("Error: You can't calculate the reminder by zero") :
-    printf("%d %% %d = %d\n",firstNumber, secondNumber,firstNumber -(firstNumber /secondNumber *secondNumber));
+    printf("%d %% %d = %d\n", firstNumber, secondNumber, firstNumber - (firstNumber / secondNumber * secondNumber));
 }
 
 //                                                 _Output One_
 /*
-Enter two integers to calculate reminder:  5 0
-Error: You can't calculate the reminder by zero
+Enter two integers to calculate reminder: 10 8
+10 % 8 = 2
  */
 
 //                                                 _Output Two_
 /*
-Enter two integers to calculate reminder:  10 8
-10 % 8 = 2
+Enter two integers to calculate reminder: -10 8
+-10 % 8 = -2
+ */
+
+//                                                 _Output Three_
+/*
+Enter two integers to calculate reminder: 10 -8
+10 % -8 = 2
+ */
+
+//                                                 _Output Four_
+/*
+Enter two integers to calculate reminder: -10 -8
+-10 % -8 = -2
+ */
+
+//                                                 _Output Five_
+/*
+Enter two integers to calculate reminder: -10 -2
+-10 % -2 = 0
+ */
+
+//                                                 _Output Six_
+/*
+Enter two integers to calculate reminder: 10 0
+Error: You can't calculate the reminder by zero
  */
