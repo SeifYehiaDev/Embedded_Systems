@@ -25,6 +25,6 @@ void main() {
 //                                                 _Output_
 /*
 Enter the base number: -2
-Enter the exponent: -5
--2 power -5 = -0.031250
+Enter the power: -5
+-2.00 power -5.00 = -0.031250
  */
