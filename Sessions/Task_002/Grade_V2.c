@@ -13,8 +13,8 @@ void main() {
     printf("Enter your degree: ");
     scanf("%lf", &degree);
     printf("Your degree is %s",
-           (degree > 100.0 || degree < 0.0) ? "Error: your degree is invalid." : (degree >= 80) ? "A" :
-           (degree >= 70) ? "B" : (degree >= 60) ? "C" : (degree >= 50) ? "D" : "F");
+           (degree > 100.0 || degree < 0.0) ? "Error: your degree is invalid." : (degree >= 80.0) ? "A" :
+           (degree >= 70.0) ? "B" : (degree >= 60.0) ? "C" : (degree >= 50.0) ? "D" : "F");
 }
 
 //                                                 _Output One_
