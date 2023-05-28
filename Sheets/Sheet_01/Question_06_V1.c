@@ -11,15 +11,15 @@
 /*Write a program to calculate the power of a number, The number and its power are input from user.*/
 //                                                 _Solution_
 void main() {
-    int number, power, index;
-    float result = 1.0F;
+    float number, power;
+    double result = 1.0;
+    unsigned index;
     printf("Enter the base number: ");
-    scanf("%d", &number);
-    printf("Enter the exponent: ");
-    scanf(" %d", &power);
+    scanf("%f", &number);
+    printf("Enter the power: ");
+    scanf(" %f", &power);
     for (index = 1; index <= abs(power); result *= number, index++);
-    printf("%d power %d = %f", number, power, (power > 0) ? result : 1.0 / result);
-
+    printf("%.2f power %.2f = %.6lf", number, power, (power > 0) ? result : 1.0 / result);
 }
 
 //                                                 _Output_
