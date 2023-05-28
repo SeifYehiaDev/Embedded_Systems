@@ -11,13 +11,12 @@
 /*Write a program to calculate the power of a number, The number and its power are input from user.*/
 //                                                 _Solution_
 void main() {
-    int number, power;
+    float number, power;
     printf("Enter the base number: ");
-    scanf("%d", &number);
-    printf("Enter the exponent: ");
-    scanf(" %d", &power);
-    printf("%d power %d = %f", number, power, pow(number, power));
-
+    scanf("%f", &number);
+    printf("Enter the power: ");
+    scanf(" %f", &power);
+    printf("%.2f power %.2f = %.6lf", number, power, pow(number, power));
 }
 
 //                                                 _Output_
