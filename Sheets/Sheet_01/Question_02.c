@@ -11,8 +11,8 @@
 /*Write a program to take numbers from user and find the max and min from them (let users choose the No of numbers).*/
 //                                                 _Solution_
 void main() {
-    int number, totalNumber, maxNumber = INT_MIN, minNumber = INT_MAX;
-    unsigned index;
+    signed int number, totalNumber, maxNumber = INT_MIN, minNumber = INT_MAX;
+    unsigned int index;
     printf("Enter the total numbers: ");
     scanf("%d", &totalNumber);
     if (totalNumber < 0) {
