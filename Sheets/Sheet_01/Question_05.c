@@ -11,7 +11,7 @@ int abs(int number);
         /*Write a program that take two numbers and calculate the reminder without using % operation.*/
 //                                                 _Solution_
 void main() {
-    signed int firstNumber, secondNumber, remainder;
+    signed int firstNumber, secondNumber;
     unsigned char isNegative;
     printf("Enter two integers: ");
     scanf("%d %d", &firstNumber, &secondNumber);
@@ -23,9 +23,8 @@ void main() {
     isNegative = firstNumber < 0;
     firstNumber = abs(firstNumber);
     secondNumber = abs(secondNumber);
-    remainder = firstNumber;
-    while (remainder >= secondNumber) remainder -= secondNumber;
-    printf("%d", (isNegative) ? -remainder : remainder);
+    while (firstNumber >= secondNumber) firstNumber -= secondNumber;
+    printf("%d", (isNegative) ? -firstNumber : firstNumber);
 }
 
 int abs(int number) {
