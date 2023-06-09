@@ -10,8 +10,8 @@
 /*Write a program to take numbers from user and calculate the sum of them (let users choose the No of numbers).*/
 //                                                 _Solution_
 void main() {
-    int number, totalNumber, sum = 0;
-    unsigned index;
+    signed int number, totalNumber;
+    unsigned int sum = 0, index;
     printf("Enter the total numbers: ");
     scanf("%d", &totalNumber);
     if (totalNumber < 0) {
@@ -22,18 +22,16 @@ void main() {
         printf("Enter number %u: ", index);
         scanf("%d", &number);
     }
-    printf("The sum of numbers is %d.", sum);
+    printf("The sum of numbers is %u.", sum);
 }
 
 //                                                 _Output One_
 /*
-Enter the total numbers: 5
-Enter number 1: 2
-Enter number 2: 3
-Enter number 3: 4
-Enter number 4: 5
-Enter number 5: 6
-The sum of numbers is 20.
+Enter the total numbers: 3
+Enter number 1: 2147483647
+Enter number 2: 2
+Enter number 3: 1
+The sum of numbers is 2147483650.
  */
 
 //                                                 _Output Two_
