@@ -10,7 +10,7 @@
         /*Write a program to take 2 numbers from user and calculate sum of all numbers between them.*/
 //                                                 _Solution_
 void main() {
-    int firstNumber, secondNumber, sum = 0, index;
+    signed int firstNumber, secondNumber, sum = 0, index;
     printf("Enter two numbers: ");
     scanf("%d %d", &firstNumber, &secondNumber);
     if (firstNumber > secondNumber) firstNumber = (firstNumber + secondNumber) - (secondNumber = firstNumber);
