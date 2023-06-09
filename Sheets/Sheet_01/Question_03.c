@@ -11,7 +11,7 @@
 //                                                 _Solution_
 void main() {
     signed int number, totalNumber;
-    unsigned int sum = 0, index;
+    unsigned int index, sum = 0;
     printf("Enter the total numbers: ");
     scanf("%d", &totalNumber);
     if (totalNumber < 0) {
