@@ -21,19 +21,19 @@ void main() {
     }
     for (index = 1; index * 2 <= number && !isBaseOfTwo; index++)
         if (index * 2 == number) isBaseOfTwo = 1;
-    printf("%d %s a base of 2.", number, (isBaseOfTwo) ? "is" : "is not");
+    printf("%d %s base of 2.", number, (isBaseOfTwo) ? "is" : "is not");
 }
 
 //                                                 _Output One_
 /*
 Enter a positive integer: 128
-128 is a base of 2.
+128 is base of 2.
  */
 
 //                                                 _Output Two_
 /*
 Enter a positive integer: 129
-129 is not a base of 2.
+129 is not base of 2.
  */
 
 //                                                 _Output Three_
