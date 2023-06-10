@@ -7,11 +7,11 @@
 #include <stdio.h>
 
 //                                                 _Question_
-                /*Write a program that reads a positive integer and checks if it is a prime.*/
+                    /*Write a program that reads a positive integer and checks if it is a prime.*/
 //                                                 _Solution_
 void main() {
-    signed number;
-    unsigned divisor;
+    signed int number;
+    unsigned int divisor;
     unsigned char isPrime = 1;
     printf("Enter a positive integer: ");
     scanf("%d", &number);
