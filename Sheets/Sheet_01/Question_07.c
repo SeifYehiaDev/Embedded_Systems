@@ -23,11 +23,17 @@ void main() {
 
 //                                                 _Output One_
 /*
+Enter a positive number: 0
+Factorial 0 is 1.
+ */
+
+//                                                 _Output Two_
+/*
 Enter a positive number: 6
 Factorial 6 is 720.
  */
 
-//                                                 _Output One_
+//                                                 _Output Three_
 /*
 Enter a positive number: -6
 Error: your enter a negative number can't calculate the factorial.
