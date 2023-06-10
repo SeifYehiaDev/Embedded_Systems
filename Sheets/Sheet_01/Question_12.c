@@ -16,10 +16,8 @@ void main() {
     do {
         printf("Enter an even number: ");
         scanf("%d", &number);
-        if (number % 2 == 0)
-            printf("The sum is %u\n", sumOfEven += number);
-        else
-            numberOFOdd++;
+        if (number & 1) numberOFOdd++;
+        else printf("The sum is %u\n", sumOfEven += number);
     } while (numberOFOdd < 2);
     printf("bye");
 }
