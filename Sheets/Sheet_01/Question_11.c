@@ -10,7 +10,7 @@
                 /*Write a program to sum the digits in a decimal number 145 -> 1+4+5=10.*/
 //                                                 _Solution_
 void main() {
-    signed number;
+    signed int number;
     unsigned char sumOfDecimal = 0;
     printf("Enter a positive integer: ");
     scanf("%d", &number);
@@ -18,7 +18,7 @@ void main() {
         printf("Error: the number should be a positive number.");
         return;
     }
-    while (number > 0) {
+    while (number) {
         sumOfDecimal += number % 10;
         number /= 10;
     }
