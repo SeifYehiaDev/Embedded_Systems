@@ -10,27 +10,28 @@
                 /*Write a program that reads a positive integer and computes the factorial.*/
 //                                                 _Solution_
 void main() {
-    int number, index, fact = 1;
+    signed int number;
+    unsigned int index, factorial = 1;
     printf("Enter a positive number: ");
     scanf("%d", &number);
     if (number < 0) {
         printf("Error: your enter a negative number can't calculate the factorial.");
         return;
     }
-    for (index = 1; index <= number; fact *= index, index++);
-    printf("Factorial %d is %d.", number, fact);
+    for (index = 1; index <= number; factorial *= index, index++);
+    printf("%d! = %u.", number, factorial);
 }
 
 //                                                 _Output One_
 /*
 Enter a positive number: 0
-Factorial 0 is 1.
+0! = 1.
  */
 
 //                                                 _Output Two_
 /*
 Enter a positive number: 6
-Factorial 6 is 720.
+6! = 720.
  */
 
 //                                                 _Output Three_
