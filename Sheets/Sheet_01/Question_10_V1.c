@@ -19,8 +19,8 @@ void main() {
         printf("Error: the number should be a positive number.");
         return;
     }
-    for (index = 1; index * 2 <= number && !isBaseOfTwo; index++)
-        if (index * 2 == number) isBaseOfTwo = 1;
+    for (index = 1; index <= number && !isBaseOfTwo; index *= 2)
+        if (index == number) isBaseOfTwo = 1;
     printf("%d %s base of 2.", number, (isBaseOfTwo) ? "is" : "is not");
 }
 
