@@ -18,7 +18,7 @@ void main() {
         printf("Error: your enter a negative number can't calculate the factorial.");
         return;
     }
-    for (index = 1; index <= number; factorial *= index, index++);
+    for (index = number; index > 1; factorial *= index, index--);
     printf("%d! = %u.", number, factorial);
 }
 
