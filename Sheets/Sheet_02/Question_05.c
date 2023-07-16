@@ -16,14 +16,12 @@ void toBinary_V1(int number) {
     }
 }
 
+// This version of function work only with positive number.
 void toBinary_V2(int number) {
-    signed short bit, isFinedOne = 0, digit;
-    for (bit = sizeof(number) * 8 - 1; bit >= 0; bit--) {
-        digit = number >> bit & 1;
-        if (isFinedOne == 0 && digit == 0) continue;
-        if (isFinedOne == 0 && digit) isFinedOne = 1;
-        printf("%d", digit);
-    }
+    int x, y;
+    char binary[sizeof(number) * 8];
+    for (x = 0; number; binary[x] = number % 2, number /= 2, x++);
+    for (y = x - 1; y >= 0; printf("%d", binary[y]), y--);
 }
 
 int main() {
@@ -31,7 +29,7 @@ int main() {
     printf("Enter a number: ");
     scanf("%d", &number);
     printf("The binary representation of %d is ", number);
-    toBinary_V1(number);
+    (number < 0) ? toBinary_V1(number) : toBinary_V2(number);
     return 0;
 }
 
