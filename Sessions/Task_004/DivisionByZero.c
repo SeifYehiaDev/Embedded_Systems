@@ -28,7 +28,7 @@ int division(int firstNumber, int secondNumber) {
 }
 
 int main() {
-    printf("6 / 2 = %d\n", division(6, 2));
+    printf("6 / -2 = %d\n", division(6, -2));
     printf("What happened in division by zero?\n");
     printf("Run time error.\n");
     printf("Why?\n");
@@ -38,7 +38,7 @@ int main() {
 
 //                                                 _Output_
 /*
-6 / 2 = 3
+6 / -2 = -3
 What happened in division by zero?
 Run time error.
 Why?
