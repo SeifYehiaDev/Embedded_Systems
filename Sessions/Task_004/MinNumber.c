@@ -22,6 +22,7 @@ int main() {
     printf("Enter three unsigned integers: ");
     scanf("%u %u %u", &firstNumber, &secondNumber, &thirdNumber);
     printf("The minimum value is %d.", min(firstNumber, secondNumber, thirdNumber));
+    return 0;
 }
 
 //                                                 _Output One_
