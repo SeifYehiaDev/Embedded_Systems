@@ -33,6 +33,7 @@ int main() {
     printf("Run time error.\n");
     printf("Why?\n");
     printf("Because when subtract firstNumber from secondNumber.\nThe first number will still be greater than the second number and can't get out of the loop(infinite loop).\nlook my function in line #18.");
+    return 0;
 }
 
 //                                                 _Output_
