@@ -17,7 +17,7 @@ int abs(int number) {
 
 int division(int firstNumber, int secondNumber) {
     int div = 0,
-    isNegative = (firstNumber >> (sizeof(firstNumber) * 8 - 1) & 1) || (secondNumber >> (sizeof(secondNumber) * 8 - 1) & 1);
+    isNegative = (firstNumber >> (sizeof(firstNumber) * 8 - 1) & 1) || (secondNumber >> (sizeof(secondNumber) * 8 - 1) & 1);;
     firstNumber = abs(firstNumber);
     secondNumber = abs(secondNumber);
     while (firstNumber >= secondNumber) {
@@ -28,7 +28,7 @@ int division(int firstNumber, int secondNumber) {
 }
 
 int main() {
-    printf("6 / -2 = %d\n", division(6, -2));
+    printf("6 / -2 = %d\n", division(6, -2)); 
     printf("What happened in division by zero?\n");
     printf("Run time error.\n");
     printf("Why?\n");
