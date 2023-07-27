@@ -10,7 +10,7 @@
                 /*Write a program that reads a positive integer and checks if it is a prime.*/
 //                                                 _Solution_
 int isPrimeNumber(int number) {
-    int isPrime = number > 2;
+    int isPrime = number >= 2;
     for (int divisor = 2; divisor <= number / 2 && isPrime; divisor++)
         if (number % divisor == 0)isPrime = 0;
     return isPrime;
