@@ -39,4 +39,4 @@ int main() {
 //                                                 _Output Two_
 /*
 Last occurrence of 10 is at index 13.
-*/x
+*/
