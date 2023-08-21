@@ -37,4 +37,4 @@ int main() {
 /*
 The maximum number in array is 100 at index 14.
 The minimum number in array is -1 at index 9.
-*/x
+*/
