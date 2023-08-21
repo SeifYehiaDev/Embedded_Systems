@@ -8,7 +8,7 @@
 #include <limits.h>
 
 //                                                 _Question_
-                /*Write a C function to take an array and return two maximum numbers.*/
+                /*Write a C function to take an array and return two maximum numbers in one loop.*/
 //                                                 _Solution_
 void twoMaxNumber(const int array[], const int size, int *const firstMaxNumber, int *const secondMaxNumber) {
     *firstMaxNumber = INT_MIN;
